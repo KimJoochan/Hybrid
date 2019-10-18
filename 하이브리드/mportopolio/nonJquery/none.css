@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+/*header*/
+.wrap {
+    width: 99%;
+    margin: 5px auto;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+}
+
+#header {
+    width: 100%;
+    height: 43px;
+    float: left;
+    background: url(darksky.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.top_icon {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top_icon.left {
+    background: url(home.png) no-repeat;
+    background-size: cover;
+    left: 10px;
+}
+
+.top_icon.right {
+    background: url(list.png) no-repeat;
+    background-size: cover;
+    right: 10px;
+}
+
+.title {
+    font-size: 20px;
+    height: 100%;
+    font-weight: 600;
+    line-height: 43px;
+    color: #eee;
+    text-align: center;
+}
+
+/*nav*/
+nav {
+    width: 100%;
+    height: 40px;
+    float: left;
+}
+
+#nav {
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+
+#nav > li {
+    width: 25%;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+#nav > li > a {
+    display: block;
+    font-weight: 500;
+}
+
+.active {
+    background-color: #b6d7f9;
+}
+
+/*section*/
+section {
+    width: 100%;
+    margin-top: 80px;
+    float: left;
+}
+
+.sub_title {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*link*/
+#link {
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 20px;
+}
+
+#link > li {
+    width: 31%;
+    margin: 0 1%;
+    height: 100%;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 10px;
+}
+
+#link > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+
+#link > li > a:hover {
+    background-color: #b6d7f9;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ddd;
+    float: left;
+    margin-top: 15px;
+}
+
+address {
+    font-style: normal;
+}
+
+/*info에서 기본적인 정보 스타일*/
+#info {
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: auto;
+    float: left;
+}
+
+#info > li {
+    width: 100%;
+    float: left;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.info_title {
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #b6d7f9;
+}
+
+.info_sub {
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+/*경력에서 서브*/
+.carrer {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+.carrer>li{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.carrer > li > a {
+    display: block;
+    font-size: 18px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*경력에서 상세보기로 hover시 변환*/
+
+.carrer > li:hover > .sub_carrer {
+    height: 40px;
+}
+
+.carrer > li > a > div {
+    background: url(add-circular-outlined-button.png) no-repeat;
+    background-size: cover;
+}
+
+.carrer > li > a:hover > div {
+    background: url(afert_icon.png) no-repeat;
+    background-size: cover;
+}
+
+.sub_carrer {
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #eee;
+    transition-duration: 0.5s;
+}
+
+/*대회 참석 횟수*/
+#number {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+
+#number > li {
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+#number > li.top_numer {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #222;
+    color: white;
+}
+/*자기소개*/
+#pic{
+    width: 140px;
+    height: 160px;
+    float: left;
+    overflow: hidden;
+}
+#pic>img{
+    width: 100%;
+    height: auto;
+    float: left;
+}
