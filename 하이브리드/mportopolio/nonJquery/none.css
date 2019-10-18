@@ -50,7 +50,18 @@ header {
     top: 50%;
     transform: translateY(-50%);
 }
-
+.top_icon>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.top_icon>a>img{
+    width: 100%;
+    height: auto;
+    float: left;
+}
 .top_icon.left {
     background: url(home.png) no-repeat;
     background-size: cover;
@@ -197,7 +208,7 @@ address {
     margin-bottom: 10px;
 }
 
-/*경력에서 서브*/
+/*career.html에서 서브*/
 .carrer {
     width: 95%;
     margin: 0 auto;
@@ -221,7 +232,7 @@ address {
     margin-right: 10px;
 }
 
-/*경력에서 상세보기로 hover시 변환*/
+/*career.html에서 상세보기로 hover시 변환*/
 
 .carrer > li:hover > .sub_carrer {
     height: 40px;
@@ -245,7 +256,7 @@ address {
     transition-duration: 0.5s;
 }
 
-/*대회 참석 횟수*/
+/*career.html 횟수*/
 #number {
     width: 95%;
     margin: 0 auto;
@@ -272,7 +283,7 @@ address {
     background-color: #222;
     color: white;
 }
-/*자기소개*/
+/*info.html*/
 #pic{
     width: 140px;
     height: 160px;
@@ -283,4 +294,21 @@ address {
     width: 100%;
     height: auto;
     float: left;
+}
+/*connect.html 레이아웃*/
+.cal_title{
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 70px;
+}
+.notice{
+    width: 100%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    margin: 15px 0;
 }
